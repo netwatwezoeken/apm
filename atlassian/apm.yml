@@ -1,0 +1,16 @@
+name: atlassian
+version: 1.0.0
+description: Atlassian mcp
+author: Jos Hendriks
+
+targets:
+- copilot
+dependencies:
+  apm: []
+  mcp:
+    - name: atlassian
+      registry: false
+      transport: http
+      url: https://mcp.atlassian.com/v1/mcp
+includes: auto
+scripts: {}
