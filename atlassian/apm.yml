@@ -4,7 +4,7 @@ description: Atlassian mcp
 author: Jos Hendriks
 
 targets:
-- copilot
+- all
 dependencies:
   apm: []
   mcp:
