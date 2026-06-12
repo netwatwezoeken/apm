@@ -1,0 +1,11 @@
+name: mermaid
+version: 1.0.0
+description: mermaid skill
+author: Bryan Finster (modifications by Jos Hendriks)
+targets:
+- all
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}
