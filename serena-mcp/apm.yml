@@ -1,6 +1,6 @@
-name: serena
+name: serena-mcp
 version: 1.0.0
-description: APM project for serena
+description: APM project for serena mcp
 author: Jos Hendriks
 # Which agent platforms to deploy to.
 # Resolution order: --target flag > this field > auto-detect from filesystem.
@@ -8,8 +8,12 @@ author: Jos Hendriks
 targets:
 - all
 dependencies:
-  apm:
-    - netwatwezoeken/apm/serena
-  mcp: []
+  apm: []
+  mcp:
+    - name: serena
+      registry: false
+      transport: stdio
+      command: serena
+      args: [ "start-mcp-server", "--project-from-cwd" ]
 includes: auto
 scripts: {}
